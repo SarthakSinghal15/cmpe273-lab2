@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package DEMO;
+
+// The Addition service definition.
+service Addition {
+  // Sends addition
+  rpc Addthem (AddRequest) returns (Result) {}
+}
+
+// The request message containing the numbers to be added.
+message AddRequest {
+  int32 number1 = 1;
+  int32 number2 = 2;
+}
+
+// The response message containing the result
+message Result {
+  int32 message = 1;
+}
