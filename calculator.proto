@@ -5,7 +5,7 @@ package DEMO;
 // The Addition service definition.
 service Addition {
   // Sends addition
-  rpc Addthem (AddRequest) returns (Result) {}
+  rpc Add(AddRequest) returns (Result) {}
 }
 
 // The request message containing the numbers to be added.
